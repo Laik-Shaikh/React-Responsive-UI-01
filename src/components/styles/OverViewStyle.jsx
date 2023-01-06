@@ -67,6 +67,9 @@ export const Flex = styled.div`
   flex-grow: 1;
   overflow: hidden;
 
+  @media screen and (max-width: 1080px) {
+    margin: 0rem 1.5rem;
+  }
 `;
 
 export const Div3 = styled.div`
@@ -78,8 +81,7 @@ export const Div3 = styled.div`
   max-width: 760px;
 
   @media screen and (max-width: 1080px) {
-    margin: 10px 2rem;
-    padding: 2rem 2rem;
+    padding: 2.5rem 1.5rem;
   }
 `;
 
@@ -106,6 +108,10 @@ export const Para = styled.p`
   font-weight: 500;
   font-size: clamp(0.7rem, 4vw, 1rem);
   text-align: center;
+
+  @media screen and (max-width: 1080px) {
+    padding: 10px 0.1rem;
+  }
 `;
 
 export const Para1 = styled.p`
