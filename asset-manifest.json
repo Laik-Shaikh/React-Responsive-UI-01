@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/React-Responsive-UI-01/static/css/main.31d6cfe0.css",
-    "main.js": "/React-Responsive-UI-01/static/js/main.a15a74b6.js",
+    "main.js": "/React-Responsive-UI-01/static/js/main.c08922a7.js",
     "index.html": "/React-Responsive-UI-01/index.html",
-    "main.a15a74b6.js.map": "/React-Responsive-UI-01/static/js/main.a15a74b6.js.map"
+    "main.c08922a7.js.map": "/React-Responsive-UI-01/static/js/main.c08922a7.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.a15a74b6.js"
+    "static/js/main.c08922a7.js"
   ]
 }
