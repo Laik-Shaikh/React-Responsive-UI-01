@@ -21,10 +21,25 @@ export const Nav = styled.nav`
         overflow-y: hidden;
     }
 `
+export const Flex = styled.div`
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    align-items: center;
+    column-gap: 10px;
+`
+
+export const Title = styled.p`
+    color: #151531;
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    
+` 
 
 export const Logo = styled.img`
-    padding: 1rem 0;
-    display: block;
+    width: 33.33px;
+    height: 33.33px;
 `
 
 export const NavMenu = styled.ul`

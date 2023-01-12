@@ -1,23 +1,46 @@
-import React, { useState } from 'react';
-import { Nav, RightPart, NavMenu, Cart, HamBurgerIcon, HamBurgerIconContainer, NavLinkItem, Logo, Close } from '../components/styles/HeaderStyle';
+import React, { useState, useEffect } from 'react';
+import { Nav, RightPart, NavMenu, Cart, HamBurgerIcon, HamBurgerIconContainer, NavLinkItem, Logo, Close, Flex, Title } from '../components/styles/HeaderStyle';
 import { Button } from '../components/styles/Button';
-
+import axios from "axios";
 
 
 const Header = () => {
   const [isToggle, setIsToggle] = useState(false);
+  const [image, setImage] = useState('');
+  
+
+  useEffect(() => {
+
+    const unsubscribe = async () => {
+      const result = await axios({
+        method: "get",
+        url: "https://pepper-api.onrender.com/admin/details",
+        headers: {
+          Accept: "application/json, form-data",
+        },
+      });
+      console.log(result.data);
+      setImage(result.data.details.image);
+    };
+    unsubscribe();
+
+  }, [])
 
 
   const handleclose = () => {
     setIsToggle(!isToggle);
   }
 
+  const URL = image? image : "./images/headerLogo.png";
+
   return (
     <>
       <Nav isToggle={isToggle}>
-        <div>
-          <Logo src="./images/headerLogo.svg" alt="" />
-        </div>
+        <Flex>
+          {/* <Logo src="./images/headerLogo.svg" alt="" /> */}
+          <Logo src={URL} alt="" />
+          <Title>Pepper</Title>
+        </Flex>
 
         <div>
           <NavMenu>

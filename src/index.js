@@ -11,3 +11,10 @@ root.render(
 );
 
 
+/*
+
+"homepage": "https://Laik-Shaikh.github.io/React-Responsive-UI-01",
+"predeploy" : "npm run build",
+"deploy" : "gh-pages -d build",
+
+*/
